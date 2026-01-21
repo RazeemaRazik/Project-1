@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".fragment.SignInFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/signin"/>
+
+    <EditText
+        android:id="@+id/signinFragmentEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/email_text_hint"
+        android:drawablePadding="4dp"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/outline_attach_email_24"/>
+
+    <EditText
+        android:id="@+id/signinFragmentPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/password_text_hint"
+        android:drawablePadding="4dp"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/baseline_password_24"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/sign_in_fragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="gone"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/signin_btn_txt"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</LinearLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Practical_1</string>
+    <string name="app_title_text">Chat App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sign_in_fragment">Sign In fragment</string>
+    <string name="sign_up_fragment">Sign Up fragment</string>
 </resources>
